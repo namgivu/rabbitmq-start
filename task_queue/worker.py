@@ -18,7 +18,7 @@ def callback(ch, method, properties, body):
   ch.basic_ack(delivery_tag=method.delivery_tag) #TODO how to get autoAck=true
 
 
-channel.basic_qos(prefetch_count=1) #a worker only get new task only after it finishes its current one;
+channel.basic_qos(prefetch_count=1) #a worker gets new task only after it finishes its current one;
                                     #make channel to accept only consumer that has one unack-ed message at a time
 
 channel.basic_consume(callback, queue='task_queue')
