@@ -23,7 +23,7 @@ public class Recv {
                 System.out.println(" [x] Received '" + message + "'");
             }
         };
-        System.out.println(" [*] Waiting for messages. To exit press CTRL+C"); //TODO put this 1-line below
+        System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
         channel.basicConsume(QUEUE_NAME, true, consumer);
     }
 
