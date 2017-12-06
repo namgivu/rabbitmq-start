@@ -3,7 +3,10 @@
 .idea/modules.xml
 .idea/dictionaries/
 .idea/rabbitmq-start.*iml
+.idea/deployment.xml
 
 *.class
 hello/*.class
 hello/*.jar
+task_queue/*.class
+task_queue/*.jar
