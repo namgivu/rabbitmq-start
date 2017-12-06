@@ -3,4 +3,5 @@
 .idea/modules.xml
 .idea/dictionaries/
 .idea/rabbitmq-start.iml
+.idea/deployment.xml
 venv3/
